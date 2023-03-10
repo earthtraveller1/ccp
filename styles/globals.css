@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'RedOctober';
-    src: url('/fonts/RedOctober.otf') format('opentype');
+    src: url('../public/fonts/RedOctober.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
