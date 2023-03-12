@@ -7,7 +7,7 @@ export default function Home() {
     return (
         <>
             <h1 className={styles.ccpbanner}>Communist Party of China</h1>
-            <Datetime/>
+            <p className={styles.inline}>The time is: </p><Datetime/>
         </>
     );
 }
