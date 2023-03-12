@@ -18,7 +18,7 @@ export default function Datetime() {
     let [second, setSecond] = React.useState(0);
 
     React.useEffect(() => {
-        const f = setInterval(() => {
+        let update = () => {
             let now = new Date();
             setYear(now.getFullYear());
             setMonth(months[now.getMonth()]);
@@ -26,9 +26,11 @@ export default function Datetime() {
             setHour(now.getHours());
             setMinute(now.getMinutes());
             setSecond(now.getSeconds());
-        }, 1000);
-
-        return () => clearInterval(f);
+        };
+        update();
+        
+        const loop = setInterval(update, 1000);
+        return () => clearInterval(loop);
     }, []);
 
     return (
