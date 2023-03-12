@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'RobotoSlab';
+    src: url('../public/fonts/RobotoSlab.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    font-family: 'Arial';
+    font-family: 'RobotoSlab';
 }
