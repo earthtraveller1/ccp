@@ -6,8 +6,8 @@ import Datetime from '../components/date';
 export default function Home() {
     return (
         <>
+        <header><h1>Communist Party of China</h1></header>
         <main>
-            <header><h1>Communist Party of China</h1></header>
             <p className={styles.inline}>Current date and time: </p><Datetime/>
         </main>
         </>
