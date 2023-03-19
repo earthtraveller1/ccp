@@ -60,6 +60,12 @@ h2 {
     font-size: 22px;
 }
 
+h4 {
+    font-family: 'IBM Plex Serif', Arial;
+    color: black;
+    font-size: 8px;
+}
+
 header {
     overflow: hidden;
     /* margin-right: -20px;
