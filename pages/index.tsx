@@ -3,10 +3,8 @@ import styles from '@/styles/Home.module.css';
 import React from 'react';
 import Datetime from '../components/date';
 import path from "path";
-// require('dotenv').config({path: __dirname + ".env"});
 
 export default function Home() {
-    // <p>{process.env.AUTH_TOKEN}</p>
     let webhook: any = process.env.REACT_APP_WEBHOOK;
 
     function send(content: object) {
