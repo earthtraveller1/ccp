@@ -39,7 +39,7 @@ export default function Home() {
     
     return (
         <>
-	<title>Website Name</title>
+	<title>Communist Party of China</title>
 	<meta content="Communist Party of China" property="og:title" />
 	<meta content="(un)Official Website of the CCP" property="og:description" />
 	<meta content="https://carpetmaker3162.github.io/ccp/" property="og:url" />
