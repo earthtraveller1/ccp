@@ -26,5 +26,8 @@
     "fs": false,
     "path": false,
     "os": false
+  },
+  "devDependencies": {
+    "@types/matter-js": "^0.18.2"
   }
 }
