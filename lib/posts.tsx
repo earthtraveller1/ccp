@@ -33,11 +33,14 @@ export function getAllPostIds() {
     //     }
     //   }
     // ]
-    return fileNames.map((fileName) => {
+
+    let ids = fileNames.map((fileName) => {
         return {
             params: {
-                id: String(fileName.replace(/\.md$/, '')),
+                id: fileName.replace(/\.md$/, ''),
             },
-        }
+        };
     });
+
+    return ids;
 }
