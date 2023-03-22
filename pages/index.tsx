@@ -2,7 +2,6 @@
 import styles from '@/styles/Home.module.css';
 import React from 'react';
 import Datetime from '../components/date';
-import path from "path";
 
 export default function Home() {
     let enabled = false;
