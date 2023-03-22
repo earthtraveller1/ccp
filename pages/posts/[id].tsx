@@ -4,11 +4,11 @@ import { getAllPostIds, getPostData } from '../../lib/posts';
 export default function Post({ postData }) {
     return (
         <>
-            d{postData.title}
+            {postData.title}
             <br/>
-            e{postData.id}
+            {postData.id}
             <br/>
-            f{postData.date}
+            {postData.date}
             <br/>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
         </>
