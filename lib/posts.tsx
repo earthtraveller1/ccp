@@ -4,7 +4,7 @@ import path from 'path';
 import fs from 'fs';
 import * as matter from 'matter-js';
 
-export async function getPostData(id) {
+export async function getPostData(id: string) {
     const fullPath = path.join("posts", `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     
