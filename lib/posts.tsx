@@ -7,7 +7,6 @@ import * as matter from 'matter-js';
 export async function getPostData(id: string) {
     const fullPath = path.join("posts", `${id}.md`);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
-    
     const processedContent = await remark()
         .use(html)
         .process(fileContents);
@@ -17,7 +16,7 @@ export async function getPostData(id: string) {
     return {
         id,
         contentHtml,
-        ...fileContents,
+        fileContents,
     };
 }
 
