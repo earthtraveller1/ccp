@@ -33,11 +33,29 @@
     font-style: normal;
 }
 
+#header-navbar {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: red;
+}
+
 * {
+    padding: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
     font-family: 'IBM Plex Serif';
 }
 
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
 body {
+    height: 100%;
+    overflow: auto;
     margin: 0;
     display: block;
     background-color: #fefdfc;
@@ -45,6 +63,7 @@ body {
 
 main {
     padding-left: 12px;
+    height: 100%;
 } main h1 {
     margin-bottom: 10px;
 }
