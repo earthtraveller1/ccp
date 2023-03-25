@@ -5,8 +5,6 @@ export default function Post({ postData }: any) {
         <>
             <header><br/></header>
             <main>
-            <h1>{postData.id}</h1>
-            <br/>
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </main>
         </>

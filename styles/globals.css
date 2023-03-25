@@ -69,12 +69,12 @@ main {
 }
 
 h1 {
-    font-family: 'Red October', Arial;
+    font-family: 'IBM Plex Serif', Arial;
     color: red;
 }
 
 h2 {
-    font-family: 'Red October Light', Arial;
+    font-family: 'IBM Plex Serif', Arial;
     color: black;
     font-size: 22px;
 }
@@ -83,6 +83,7 @@ h4 {
     font-family: 'IBM Plex Serif', Arial;
     color: black;
     font-size: 8px;
+    font-weight: bold;
 }
 
 header {
