@@ -1,5 +1,5 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
-import { find } from '../../lib/util.tsx';
+import { find } from '../../lib/util';
 
 export default function Post({ postData }: any) {
     let html: string = postData.contentHtml;
