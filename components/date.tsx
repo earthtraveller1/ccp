@@ -1,14 +1,11 @@
 import React from 'react';
 import styles from './date.module.css';
+import { format } from '../lib/util';
 
 export default function Datetime() {
     const months = ["January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
     ];
-
-    let format = (n: string | number) => {
-        return ("00" + n).slice(-2);
-    }
 
     let [year, setYear] = React.useState(1000);
     let [month, setMonth] = React.useState("January");

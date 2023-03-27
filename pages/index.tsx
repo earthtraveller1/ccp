@@ -40,6 +40,11 @@ export default function Home() {
         <>
 	<title>Communist Party of China</title>
         <header><h1>Communist Party of China</h1></header>
+        <meta content="Communist Party of China" property="og:title"/>
+	<meta content="(un)Official Website of the CCP" property="og:description"/>
+	<meta content="https://carpetmaker3162.github.io/ccp/" property="og:url"/>
+	<meta content="https://cdn.discordapp.com/emojis/1080851553080057997.webp?size=96&quality=lossless" property="og:image"/>
+        <meta content="#ff0000" data-react-helmet="true" name="theme-color"/>
         <main>
             <h1>Welcome</h1>
             <h2>to the unofficial website of the CCP!</h2>
