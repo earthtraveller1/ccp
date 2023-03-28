@@ -1,7 +1,7 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import { find } from '../../lib/util';
 import Link from 'next/link';
-import DiscordEmbed from '../../components/embed.tsx'
+import DiscordEmbed from '../../components/embed'
 
 export default function Post({ postData }: any) {
     let html: string = postData.contentHtml;
