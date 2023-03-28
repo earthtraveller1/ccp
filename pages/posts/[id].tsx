@@ -4,7 +4,6 @@ import Link from 'next/link';
 
 export default function Post({ postData }: any) {
     let html: string = postData.contentHtml;
-    console.log(postData.author);
     return (
         <>
             <header>
