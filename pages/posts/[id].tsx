@@ -7,7 +7,7 @@ export default function Post({ postData }: any) {
         <>
             <header><br/></header>
                 <meta content={find("h1", html).join(" ")} property="og:title"/>
-                <meta content={find("p", html).join("\n\n").substring(0, 200)} property="og:description"/>
+                <meta content={find("p", html).join("\n\n").substring(0, 400)} property="og:description"/>
                 <meta content="https://carpetmaker3162.github.io/ccp/" property="og:url"/>
                 <meta content="https://cdn.discordapp.com/emojis/1080851553080057997.webp?size=96&quality=lossless" property="og:image"/>
                 <meta content="#ff0000" data-react-helmet="true" name="theme-color"/>
