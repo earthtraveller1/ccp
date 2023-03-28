@@ -18,6 +18,8 @@
     user-select: none;
 
     transition-duration: 250ms;
+    
+    display: inline-block;
 }
 
 .box:hover {

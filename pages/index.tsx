@@ -3,7 +3,6 @@ import styles from '@/styles/Home.module.css';
 import React from 'react';
 import Datetime from '../components/date';
 import DiscordEmbed from '../components/embed';
-
 import PostLink from '../components/post';
 
 export default function Home() {
@@ -53,8 +52,13 @@ export default function Home() {
 
             <PostLink 
                 title={"The Discovery of Immortality Medicine"} 
-                description={"Learn how the current leader of the CCP, Neng Li, descovered immortality medicine"} 
+                description={"Learn how the current leader of the CCP, Neng Li, discovered immortality medicine"} 
                 url={"posts/2"}
+            />
+            <PostLink 
+                title={"CCP Anti-god weapon V4 release"} 
+                description={"Learn about the newest CCP military technology, the upcoming Second Universal War, and what it means for normal people"} 
+                url={"posts/3"}
             />
         </main>
         </>
