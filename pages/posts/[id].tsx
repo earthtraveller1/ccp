@@ -4,6 +4,7 @@ import Link from 'next/link';
 
 export default function Post({ postData }: any) {
     let html: string = postData.contentHtml;
+    console.log(postData.author);
     return (
         <>
             <header>
@@ -15,6 +16,7 @@ export default function Post({ postData }: any) {
                 <meta content="https://cdn.discordapp.com/emojis/1080851553080057997.webp?size=96&quality=lossless" property="og:image"/>
                 <meta content="#ff0000" data-react-helmet="true" name="theme-color"/>
             <main className="posts">
+            {postData.author && `By: ${postData.author}`}
             <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
             </main>
         </>
