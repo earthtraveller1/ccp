@@ -39,10 +39,6 @@
     margin-right: auto;
 }
 
-header {
-    max-width: 100%;
-}
-
 #header-navbar {
     position: absolute;
     width: 100%;
@@ -98,8 +94,6 @@ h4 {
 
 header {
     overflow: hidden;
-    /* margin-right: -20px;
-    margin-left: -20px; */
     margin-bottom: 25px;
     border-color: #FFFF00;
     border-bottom-style: solid;
@@ -111,5 +105,10 @@ header {
     color: yellow;
     text-align: center;
     font-size: 50px;
+} header a {
+    font-family: 'Red October', Arial;
+    color: yellow;
+    text-align: center;
+    padding-left: 10px;
+    text-decoration: none;
 }
-

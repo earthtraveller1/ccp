@@ -1,11 +1,14 @@
 import { getAllPostIds, getPostData } from '../../lib/posts';
 import { find } from '../../lib/util';
+import Link from 'next/link';
 
 export default function Post({ postData }: any) {
     let html: string = postData.contentHtml;
     return (
         <>
-            <header><br/></header>
+            <header>
+                <Link href="/">Home</Link>
+            </header>
                 <meta content={find("h1", html).join(" ")} property="og:title"/>
                 <meta content={find("p", html).join("\n\n").substring(0, 500)} property="og:description"/>
                 <meta content="https://carpetmaker3162.github.io/ccp/" property="og:url"/>
