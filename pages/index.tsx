@@ -4,6 +4,8 @@ import React from 'react';
 import Datetime from '../components/date';
 import DiscordEmbed from '../components/embed';
 
+import PostLink from '../components/post';
+
 export default function Home() {
     let enabled = false;
 
@@ -46,6 +48,10 @@ export default function Home() {
             <h1>Welcome</h1>
             <h2>to the unofficial website of the CCP!</h2>
             <p className={styles.inline}>Current date and time: </p><Datetime/>
+            
+            <h2>Articles</h2>
+
+            <PostLink title={"The Discovery of Immortality Medicine"} description={"Learn how the current leader of the CCP, Neng Li, descovered immortality medicine"} />
         </main>
         </>
     );
