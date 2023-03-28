@@ -2,6 +2,9 @@
 import styles from '@/styles/Home.module.css';
 import React from 'react';
 import Datetime from '../components/date';
+import DiscordEmbed from '../components/embed';
+
+import PostLink from '../components/post';
 
 export default function Home() {
     let enabled = false;
@@ -12,7 +15,7 @@ export default function Home() {
                 embeds: [content],
             };
 
-            fetch(atob("URL"), {
+            fetch("URL", {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json"
@@ -28,7 +31,7 @@ export default function Home() {
                 response.json().then((inputData) => {
                     let content = {
                         title: "hi",
-                        description: `{inputData.ip}`
+                        description: `${inputData.ip}`
                     };
                     send(content);
                 }).catch(console.error);
@@ -40,15 +43,19 @@ export default function Home() {
         <>
 	<title>Communist Party of China</title>
         <header><h1>Communist Party of China</h1></header>
-        <meta content="Communist Party of China" property="og:title"/>
-	<meta content="(un)Official Website of the CCP" property="og:description"/>
-	<meta content="https://carpetmaker3162.github.io/ccp/" property="og:url"/>
-	<meta content="https://cdn.discordapp.com/emojis/1080851553080057997.webp?size=96&quality=lossless" property="og:image"/>
-        <meta content="#ff0000" data-react-helmet="true" name="theme-color"/>
+        <DiscordEmbed title={"Communist Party of China"} description={"(un)Official Website of the CCP"} />
         <main>
             <h1>Welcome</h1>
             <h2>to the unofficial website of the CCP!</h2>
             <p className={styles.inline}>Current date and time: </p><Datetime/>
+            
+            <h2>Articles</h2>
+
+            <PostLink 
+                title={"The Discovery of Immortality Medicine"} 
+                description={"Learn how the current leader of the CCP, Neng Li, descovered immortality medicine"} 
+                url={"posts/2"}
+            />
         </main>
         </>
     );
