@@ -51,7 +51,11 @@ export default function Home() {
             
             <h2>Articles</h2>
 
-            <PostLink title={"The Discovery of Immortality Medicine"} description={"Learn how the current leader of the CCP, Neng Li, descovered immortality medicine"} />
+            <PostLink 
+                title={"The Discovery of Immortality Medicine"} 
+                description={"Learn how the current leader of the CCP, Neng Li, descovered immortality medicine"} 
+                url={"posts/2"}
+            />
         </main>
         </>
     );
