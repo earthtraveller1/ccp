@@ -20,6 +20,7 @@
     transition-duration: 250ms;
     
     display: inline-block;
+    margin-right: 10px;
 }
 
 .box:hover {
