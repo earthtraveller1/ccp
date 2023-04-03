@@ -66,6 +66,11 @@ export default function Home() {
                         description={"Learn about the newest CCP military technology, the upcoming Second Universal War, and what it means for normal people"}
                         url={"posts/3"}
                     />
+                    <PostLink
+                        title={"Tensions rise between the CCP and the Univeral Forces"}
+                        description={"Learn about how the CCP reacted to King Shiva Deshpande's update on his recognition of the PRC."}
+                        url={"posts/4"}
+                    />
 
                 </ArticleContainer>
             </main>
