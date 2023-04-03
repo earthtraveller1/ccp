@@ -32,6 +32,16 @@
     max-height: 20em;
 }
 
+.box:active {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: orange;
+    color: red;
+    border-color: orange;
+
+    max-height: 20em;
+}
+
 .title {
     margin-bottom: 0.5em;
 
