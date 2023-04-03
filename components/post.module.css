@@ -10,6 +10,8 @@
 
     padding: 0.5em;
     max-width: 20em;
+    min-height: 15em;
+    max-height: 15em;
 
     background-color: red;
     color: yellow;
@@ -19,8 +21,7 @@
 
     transition-duration: 250ms;
     
-    display: inline-block;
-    margin-right: 10px;
+    margin: 0.5em;
 }
 
 .box:hover {
@@ -28,6 +29,8 @@
     padding-bottom: 1em;
     background-color: yellow;
     color: red;
+
+    max-height: 20em;
 }
 
 .title {
