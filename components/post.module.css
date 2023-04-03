@@ -9,7 +9,8 @@
     border-radius: 1em;
 
     padding: 0.5em;
-    max-width: 20em;
+    max-width: 30em;
+    height: 14em;
 
     background-color: red;
     color: yellow;
@@ -19,8 +20,7 @@
 
     transition-duration: 250ms;
     
-    display: inline-block;
-    margin-right: 10px;
+    margin: 0.5em;
 }
 
 .box:hover {
@@ -28,6 +28,18 @@
     padding-bottom: 1em;
     background-color: yellow;
     color: red;
+
+    max-height: 20em;
+}
+
+.box:active {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: orange;
+    color: red;
+    border-color: orange;
+
+    max-height: 20em;
 }
 
 .title {
@@ -36,6 +48,18 @@
     font-family: 'Red October';
     font-size: 2em;
     font-weight: bold;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    height: 10em;
+}
+
+.descriptionContainer {
+    display: felx;
+    align-items: center;
+    height: 2em;
 }
 
 .description {
