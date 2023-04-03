@@ -9,9 +9,8 @@
     border-radius: 1em;
 
     padding: 0.5em;
-    max-width: 20em;
-    min-height: 15em;
-    max-height: 15em;
+    max-width: 30em;
+    height: 14em;
 
     background-color: red;
     color: yellow;
@@ -39,6 +38,18 @@
     font-family: 'Red October';
     font-size: 2em;
     font-weight: bold;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+    height: 10em;
+}
+
+.descriptionContainer {
+    display: felx;
+    align-items: center;
+    height: 2em;
 }
 
 .description {

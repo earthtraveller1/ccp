@@ -5,8 +5,12 @@ export default function Post({ title, description, url }: { title: string, descr
     return (
         <Link href={url} className={styles.link}>
             <div className={styles.box}>
-                <div className={styles.title}>{title}</div>
-                <div className={styles.description}>{description}</div>
+                <div className={styles.titleContainer}>
+                    <div className={styles.title}>{title}</div>
+                </div>
+                <div className={styles.descriptionContainer}>
+                    <div className={styles.description}>{description}</div>
+                </div>
             </div>
         </Link>
     )
