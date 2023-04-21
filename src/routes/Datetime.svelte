@@ -1,5 +1,5 @@
 <script>
-	import { format } from '../../lib/util';
+	import { format } from '../lib/util';
 
 	const months = [
 		'January',
@@ -32,15 +32,18 @@
 		hour = now.getHours();
 		minute = now.getMinutes();
 		second = now.getSeconds();
+
+	    setTimeout(update, 1000);
 	}
 
-	setTimeout(update, 1000);
+    update()
+
 </script>
+
+<p class="inline">{day} {month}, {year} {format(hour)}:{format(minute)}:{format(second)}</p>
 
 <style>
 	.inline {
 		display: inline;
 	}
 </style>
-
-<p class="inline">{day} {month}, {year} {format(hour)}:{format(minute)}:{format(second)}</p>
