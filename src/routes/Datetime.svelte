@@ -45,5 +45,6 @@
 <style>
 	.inline {
 		display: inline;
+        color: red;
 	}
 </style>
