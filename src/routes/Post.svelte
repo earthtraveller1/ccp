@@ -1,0 +1,87 @@
+<script lang="ts">
+	// Properties that we can pass to this component.
+	export let title: string;
+	export let description: string;
+	export let url: string;
+</script>
+
+<a href={url} class="link">
+	<div class="box">
+		<div class="titleContainer">
+			<div class="title">{title}</div>
+		</div>
+		<div class="descriptionContainer">
+			<div class="description">{description}</div>
+		</div>
+	</div>
+</a>
+
+<style>
+	.link {
+		text-decoration: none;
+	}
+
+	.box {
+		border-style: solid;
+		border-width: 0.5em;
+		border-color: yellow;
+		border-radius: 1em;
+
+		padding: 0.5em;
+		max-width: 30em;
+		height: 14em;
+
+		background-color: red;
+		color: yellow;
+
+		text-align: center;
+		user-select: none;
+
+		transition-duration: 250ms;
+
+		margin: 0.5em;
+	}
+
+	.box:hover {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		background-color: yellow;
+		color: red;
+
+		max-height: 20em;
+	}
+
+	.box:active {
+		padding-top: 1em;
+		padding-bottom: 1em;
+		background-color: orange;
+		color: red;
+		border-color: orange;
+
+		max-height: 20em;
+	}
+
+	.title {
+		margin-bottom: 0.5em;
+
+		font-family: 'Red October';
+		font-size: 2em;
+		font-weight: bold;
+	}
+
+	.titleContainer {
+		display: flex;
+		align-items: center;
+		height: 10em;
+	}
+
+	.descriptionContainer {
+		display: felx;
+		align-items: center;
+		height: 2em;
+	}
+
+	.description {
+		font-family: 'Roboto Mono';
+	}
+</style>
