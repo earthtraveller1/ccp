@@ -4,22 +4,36 @@
 
 <title>Communist Party of China</title>
 
-<header>
-	<h1>Communist Party of China</h1>
-</header>
+<div class="everything">
+	<header>
+		<h1>Communist Party of China</h1>
+	</header>
 
-<main>
-	<h1>Welcome</h1>
-	<h2>to the unofficial website of the CCP!</h2>
+	<main>
+		<h1>Welcome</h1>
+		<h2>to the unofficial website of the CCP!</h2>
 
-	<p class="inline">Current date and time:</p>
-	<Datetime />
+		<p class="inline">Current date and time:</p>
+		<Datetime />
 
-	<h2>Articles</h2>
-</main>
+		<h2>Articles</h2>
+	</main>
+</div>
 
 <style>
 	.inline {
 		display: inline;
 	}
+
+	main {
+		overflow: hidden;
+		max-height: 100vh;
+		margin: 0;
+	}
+
+    .everything {
+        overflow: hidden;
+        max-height: 100vh;
+        margin: 0;
+    }
 </style>
