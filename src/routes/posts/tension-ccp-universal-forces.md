@@ -1,3 +1,7 @@
+---
+author: Neng Li
+---
+
 # Tensions rise between the CCP and the Universal Forces
 
 ## Transcript of Official CCP Broadcast

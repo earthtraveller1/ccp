@@ -1,3 +1,7 @@
+---
+author: Neng Li
+---
+
 # Anti-god Weapon V4 release
 
 The Communist Party of China is pleased to announce the finished development of the Anti-god Weapon V4. This newest version of the weapon is approximately 39,000x more powerful than the V3, which in turn is 1,000,000,000x more powerful than the V2.
