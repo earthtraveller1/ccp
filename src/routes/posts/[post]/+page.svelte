@@ -3,7 +3,7 @@
 </script>
 
 <header>
-	<a href="/">Home</a>
+	<a href="/ccp">Home</a>
 </header>
 
 <main class="posts">
